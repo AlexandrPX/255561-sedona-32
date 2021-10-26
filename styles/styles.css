@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.navigation-link {
+  line-height: 26px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-index {
+  background-color: #FFFFFF;
+  background-image: url("../images/index-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-intro {
+  text-align: center;
+}
+
+.advantages-causes {
+  background-color: #83B3D3;
+}
+
+.advantages-causes-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.advantages-causes-number {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.advantages-causes-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-number {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.decoration-column-one {
+  background-image: url(../images/sedona-street.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.decoration-column-two {
+  background-image: url(../images/devils-bridge.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.light-cold {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.cold {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.offer {
+  text-align: center;
+}
+
+.offer-search {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.offer-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333
+}
+
+.index-page-footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-color: #FFFFFF;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.page-footer {
+  text-align: center;
+}
+
+.offer-subscribe {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.info-subscribe {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* оформление каталога */
+
+.mane-inner {
+  background-image: url("../images/catalog-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.hotel-filter {
+  color: #f30c0c;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.inner-title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.found-options {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.amound-of-options {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.product-card-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.catalog-offer-subscribe {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog-info-subscribe {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
