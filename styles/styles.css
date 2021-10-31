@@ -109,16 +109,13 @@ body {
   text-transform: uppercase;
 }
 
-.decoration-column-one {
-  background-image: url(../images/sedona-street.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+.cause-first::after {
+  content: url(../images/sedona-street.jpg);
+
 }
 
-.decoration-column-two {
-  background-image: url(../images/devils-bridge.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+.cause-second::before {
+  content: url(../images/devils-bridge.jpg);
 }
 
 .light-cold {
@@ -182,16 +179,14 @@ body {
 
 /* оформление каталога */
 
-.mane-inner {
+.hotel-filter {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 23px;
   background-image: url("../images/catalog-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-}
-
-.hotel-filter {
-  color: #f30c0c;
-  font-size: 18px;
-  line-height: 23px;
+  background-color: #83B3D3;
 }
 
 .inner-title {
