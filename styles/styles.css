@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
@@ -26,6 +34,27 @@ body {
   background: #FFFFFF;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 250px;
+  margin-left: auto;
+}
+
+.sedona-arm {
+  margin: 0 auto;
+}
+
 .navigation-link {
   line-height: 26px;
   font-size: 20px;
@@ -35,14 +64,30 @@ body {
   color: #000000;
 }
 
-.main-index {
-  background-color: #FFFFFF;
-  background-image: url("../images/index-bg.jpg");
+.main-container {
+  flex-grow: 1;
+}
+
+.intro-container {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/index-bg.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-sedona {
+  display: block;
+  margin: 0 auto;
+}
+
 .intro {
+  width: 720px;
+  margin: 0 auto;
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
@@ -55,13 +100,35 @@ body {
 }
 
 .advantages-causes {
+  display: flex;
+  margin: 0;
+  padding: 0;
   background-color: #83B3D3;
+  min-width: 400px;
+}
+
+.advantages-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }
 
 .advantages-causes-title {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
+  font-weight: 700px;
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -111,11 +178,14 @@ body {
 
 .cause-first::after {
   content: url(../images/sedona-street.jpg);
-
+  width: 800px;
+  height: 384px;
 }
 
 .cause-second::before {
   content: url(../images/devils-bridge.jpg);
+  width: 800px;
+  height: 384px;
 }
 
 .light-cold {
@@ -127,12 +197,17 @@ body {
 }
 
 .offer {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .offer-search {
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
@@ -143,15 +218,22 @@ body {
   color: #333333
 }
 
-.index-page-footer {
-  background-image: url("../images/footer-bg.jpg");
-  background-color: #FFFFFF;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .page-footer {
   text-align: center;
+}
+
+.subscribe-index {
+  background-image: url("../images/footer-bg.jpg");
+  background-color: #83B3D3;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .offer-subscribe {
@@ -169,17 +251,37 @@ body {
   color: #FFFFFF;
 }
 
+.footer-contacts {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  width: 120px;
+}
+
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  width: 720px;
+  margin: 0 auto;
+}
+
+.logo-button {
+  width: 115px;
+  margin-right: 72px;
 }
 
 /* оформление каталога */
 
 .hotel-filter {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   color: #FFFFFF;
   font-size: 18px;
   line-height: 23px;
@@ -189,16 +291,46 @@ body {
   background-color: #83B3D3;
 }
 
+.hotel-filter-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .inner-title {
+  width: 528px;
+  margin-left: 71px;
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs {
+  display: flex;
+  width: 115px;
+  margin-left: 77px;
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0 auto;
+}
+
+.infrastructure {
+  width: 150px;
+}
+
+.housing {
+  width: 150px;
+}
+
+.price {
+  width: 528px;
 }
 
 .catalog-filter-title {
@@ -213,11 +345,29 @@ body {
   line-height: 23px;
 }
 
+.sorting-type-container {
+  display: flex;
+}
+
 .amound-of-options {
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
+  width: 400px;
+  margin-left: 71px;
+}
+
+.select-controle {
+  width: 287px;
+  height: 48px;
+  margin-left: 192px;
+}
+
+.view-mode {
+  display: flex;
+  width: 156px;
+  margin-left: 81px;
 }
 
 .product-card-title {
@@ -242,6 +392,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .catalog-info-subscribe {
