@@ -29,6 +29,17 @@ body {
   background-color: #FFFFFF;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   color: #000000;
   background: #FFFFFF;
@@ -41,14 +52,21 @@ body {
 }
 
 .navigation-list {
-  width: 350px;
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  margin-left: 71px;
+}
+
+.navigation-item {
+  margin-bottom: 4px;
+  margin-top: 3px;
 }
 
 .navigation-user {
-  width: 250px;
   margin-left: auto;
+  margin-right: 72px;
 }
 
 .sedona-arm {
@@ -56,23 +74,38 @@ body {
 }
 
 .navigation-link {
+  font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
   color: #000000;
+  display: block;
+  padding: 16px;
 }
 
 .main-container {
   flex-grow: 1;
 }
 
-.intro-container {
+.logo-container {
   background-color: rgba(131, 179, 211, 0.12);
-  background-image: url("../images/index-bg.svg");
+  background-image: url("../images/index-bg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 63px;
+}
+
+.logo-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
+  background: url(../images/mask-bg.svg) no-repeat 50% 50%;
 }
 
 .page-container {
@@ -83,6 +116,8 @@ body {
 .logo-sedona {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 79px;
 }
 
 .intro {
@@ -93,10 +128,12 @@ body {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 63px;
 }
 
 .advantages-intro {
   text-align: center;
+  margin-bottom: 79px;
 }
 
 .advantages-causes {
